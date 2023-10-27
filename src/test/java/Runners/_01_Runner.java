@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterClass;
 
 @CucumberOptions (
-        features = "src/test/java/FutureFiles/_02_TeamStudentMatchingTest.feature",
+        features = "src/test/java/FutureFiles/_01_AutomatedMatchingTest.feature",
         glue = "StepDefinitions",
         plugin = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 )
