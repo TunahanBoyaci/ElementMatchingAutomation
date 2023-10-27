@@ -73,7 +73,7 @@ public class ParameterDriver {
         }
     }
 
-    public void takeScreenShot() throws IOException {
+    public static void takeScreenShot() throws IOException {
         LocalDateTime localDateTime = LocalDateTime.now();
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM_dd_yyyy_hh_mm_ss_SSS");
         TakesScreenshot takesScreenshot = (TakesScreenshot) ParameterDriver.getDriver();
