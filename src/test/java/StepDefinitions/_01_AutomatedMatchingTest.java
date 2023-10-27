@@ -37,8 +37,5 @@ public class _01_AutomatedMatchingTest {
 
             }
         }
-
-        WebElement lastElement = dialogContent.countriesBox.get(dialogContent.countriesBox.size() - 3);
-        System.out.println(lastElement.getCssValue("color"));
     }
 }

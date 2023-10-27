@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class DialogContent2 extends MyMethods {
+public class    DialogContent2 extends MyMethods {
     public DialogContent2(){
         PageFactory.initElements(ParameterDriver.getDriver(),this);
     }
