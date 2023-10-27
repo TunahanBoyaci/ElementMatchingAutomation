@@ -22,8 +22,7 @@ public class _03_CityCountryMatchingTest {
 
     @Then("Distribute the cities to the correct Countries")
     public void distributeTheCitiesToTheCorrectCountries() {
-        // Close the ad manually in 2 seconds
-        MyMethods2.myWait(3);
+        dialogContent3.scrollDownByPixel(400);
 
         Actions actions = new Actions(ParameterDriver.getDriver());
 

@@ -5,6 +5,7 @@ import Utilities.MyMethods2;
 import Utilities.ParameterDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
@@ -19,8 +20,7 @@ public class _01_AutomatedMatchingTest {
 
     @Then("Put all Cities to the correct Countries")
     public void putAllCitiesToTheCorrectCountries() {
-        // Close the ad manually in 2 seconds
-        MyMethods2.myWait(2);
+        dialogContent.scrollToBottomOfThePage();
 
         Actions actions = new Actions(ParameterDriver.getDriver());
 

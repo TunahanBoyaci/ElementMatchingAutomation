@@ -34,9 +34,19 @@ public class MyMethods {
     }
 
     public void scrollToElement(WebElement webElement){
+        waitUntilVisible(webElement);
         JavascriptExecutor js = (JavascriptExecutor) ParameterDriver.getDriver();
         js.executeScript("arguments[0].scrollIntoView();", webElement);
     }
 
+    public void scrollDownByPixel(int pixel){
+        JavascriptExecutor js = (JavascriptExecutor) ParameterDriver.getDriver();
+        js.executeScript("window.scrollBy(0," + pixel + ")");
+    }
+
+    public void scrollToBottomOfThePage(){
+        JavascriptExecutor js = (JavascriptExecutor) ParameterDriver.getDriver();
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
 
 }
