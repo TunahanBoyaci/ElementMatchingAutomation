@@ -20,7 +20,7 @@ public class _01_AutomatedMatchingTest {
 
     @Then("Put all Cities to the correct Countries")
     public void putAllCitiesToTheCorrectCountries() {
-        dialogContent.scrollToBottomOfThePage();
+        dialogContent.scrollDownByPixel(100);
 
         Actions actions = new Actions(ParameterDriver.getDriver());
 

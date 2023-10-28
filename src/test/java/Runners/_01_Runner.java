@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterClass;
 
 @CucumberOptions (
-        features = "src/test/java/FutureFiles",
+        features = "src/test/java/FutureFiles/_01_AutomatedMatchingTest.feature",
         glue = "StepDefinitions",
         plugin = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 )
@@ -20,7 +20,7 @@ public class _01_Runner extends AbstractTestNGCucumberTests {
         ExtentService.getInstance().setSystemInfo("User Name","Tunahan Boyaci");
         ExtentService.getInstance().setSystemInfo("Application Name","dhtmlgoodies");
         ExtentService.getInstance().setSystemInfo("Operating System Info",System.getProperty("os.name"));
-        ExtentService.getInstance().setSystemInfo("Department","QA");
+        ExtentService.getInstance().setSystemInfo("Department","SEDT");
         ExtentService.getInstance().setSystemInfo("Additional line","Additional info");
     }
 
